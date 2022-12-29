@@ -6,10 +6,6 @@ app.get('/', (req,res)=> {
   res.send('첫 프로젝트!')
 })
 
-// app.listen(port, ()=> {
-//   console.log('서버가 열렸어요!')
-// )}
-
 app.get('/user', (req,res)=> {
   res.send('회원정보 가져오기')
 })
@@ -28,3 +24,4 @@ app.post('/register',(req,res)=> {
 app.listen(port, ()=> {
   console.log('서버가 열렸어요!')
 })
+
