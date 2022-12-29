@@ -1,13 +1,15 @@
 const express = require('express')
+const cookieParser = require('cookie-parser')
 const app = express()
+app.use(cookieParser)
 const port = 3000
 
 app.get('/', (req,res)=> {
   res.send('첫 프로젝트!')
 })
 
-app.get('/user', (req,res)=> {
-  res.send('회원정보 가져오기')
+app.get('/users', (req,res)=> {
+  res.send('<h1>회원정보 가져오기<h1>')
 })
 
 app.post('/login', (req,res)=> {
