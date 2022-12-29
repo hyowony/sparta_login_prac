@@ -1,0 +1,5 @@
+a( git add)+m(git commit -m)
+git pull로 당겨온다.
+!== 만약 ~ 일치하지 않는다면
+!use 유저가 아니라면 
+sd
